@@ -13,7 +13,7 @@ namespace WebApplicationTest.Models
         public string ConnectionString { get; set; }
         public Reposiroty()
         {
-            ConnectionString = "Data Source=LORD;Initial Catalog=ASP.NET;Integrated Security=True;";
+            ConnectionString = "Data Source=KARIMOVFARAMUSH;Initial Catalog=ASP.NET;Integrated Security=True;";
         }
         public List<Model> Select()
         {
