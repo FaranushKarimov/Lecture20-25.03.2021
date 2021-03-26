@@ -1,0 +1,24 @@
+﻿@model List<WebApplicationTest.Models.Person>
+@{
+    ViewData["Title"] = "Personal";
+}
+
+<div class="text-center">
+    <table>
+        <tr>
+            <td>Id</td>
+            <td>LastName</td>
+            <td>FirstName</td>
+            <td>MiddleName</td>
+        </tr>
+        @foreach ( var person in Model)
+        {
+            <tr>
+                <td>@person.Id</td>
+                <td>@person.LastName</td>
+                <td>@person.FirstName</td>
+                <td>@person.MiddleName</td>
+            </tr>
+        }
+    </table>
+</div>
